@@ -1,0 +1,38 @@
+
+  <style>
+    .main-nav a:hover, .main-nav .active > a, .main-nav li:hover > a{
+      color:white;
+    }
+    .main-nav a{
+      color:white;
+    }
+  </style>
+
+<mat-toolbar color = "primary">
+  <div class="logo float-left">
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+    <a href="/" class="scrollto"><img src="assets/logo.png" alt="" class="img-fluid" style="max-height:60px; margin:-12px 0;"></a>
+  </div>
+
+   <span class= "spacer"> </span>
+
+   <ul>
+
+     <li>
+       <a mat-button routerLink="submitproblem"> Submit Problem </a>
+     </li>
+     <li>
+
+
+        <a mat-button routerLink="land"> LogOut </a>
+
+  </li>
+     <li>
+       <a mat-button routerLink="">About us</a>
+     </li>
+   </ul>
+
+</mat-toolbar>
+
+<br>

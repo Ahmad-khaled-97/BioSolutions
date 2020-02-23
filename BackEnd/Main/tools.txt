@@ -1,0 +1,9 @@
+>Sequence Alignment 
+BLAST|Basic local alignment search tool, provided by NCBI.|https://blast.ncbi.nlm.nih.gov/Blast.cgi
+LALIGN|Online free tool for finding local alignment between two sequences (provided in stipulated input format, viz. plain text without header line, Swiss-Prot ID, TrEMBL ID, EMBL ID, EST ID etc).|https://embnet.vital-it.ch/software/LALIGN_form.html
+ClustalW|A very popular site for pairwise and multiple sequence alignment. . It runs in Windows, Linux/Unix and Mac operating systems.|https://www.genome.jp/tools-bin/clustalw
+>DNA-Sequence-Acquisition
+NCBI|It is a vast repository and a public database of nucleic acid sequences, literature and genome specific resources. Besides, it provides several biocomputational tools for sequence analysis and FTPs for sequence retreival.|https://www.ncbi.nlm.nih.gov/
+GenBank|A public repository of nucleotide sequences provided by NCBI.|https://www.ncbi.nlm.nih.gov/genbank/
+EBI|The EBI, a part of EMBL, is an academic research institute located on the Wellcome Trust Genome Campus in Cambridge (UK). It serves as a public repository of molecular data. It also provides free online bioinformatic software and tools.|https://www.ebi.ac.uk/
+Uniprot|UniProt provides the scientific community with a comprehensive, high-quality and freely accessible resource of protein sequence and functional information.|https://www.uniprot.org/

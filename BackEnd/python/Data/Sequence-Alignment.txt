@@ -1,0 +1,67 @@
+Given two or more sequences, we initially wish to 
+measure their similarity
+determine the residue-residue correspondences
+observe patterns of conservation and variability
+infer evolutionary relationships.
+
+Sequence alignment is the identification of residue-residue correspondences. It is the basic
+tool of bioinformatics.
+Any assignment of correspondences that preserves the order of the residues within the sequences is an
+alignment. Gaps may be introduced.
+
+The most fundamental
+process in this type of comparison is sequence alignment. This is the process by which
+sequences are compared by searching for common character patterns and establishing
+residue–residue correspondence among related sequences. Pairwise sequence
+alignment is the process of aligning two sequences and is the basis of database similarity
+searching.
+Alignment algorithms, both global and local, are fundamentally similar and only differ
+in the optimization strategy used in aligning similar residues.Both types of algorithms
+can be based on one of the three methods: the dot matrix method, the dynamic programming
+method, and the word method. The dot matrix and dynamic programming
+methods are discussed herein. The word method, which is used in fast database similarity
+searching.
+Pairwise Sequence Alignment is used to identify regions of similarity that may indicate functional, structural relationships between two dna or rna sequences.
+Global alignment tools create an end-to-end alignment of the sequences to be aligned.
+Local alignment tools find one, or more, alignments describing the most similar region(s) within the sequences to be aligned. They are can align protein and nucleotide sequences.
+Genomic alignment tools concentrate on DNA (or to DNA) alignments while accounting for characteristics present in genomic data.
+
+An alignment is an arrangement of two sequences which shows where the	two sequences are similar, and where they differ. An optimal	alignment, of course, is one that exhibits the most significant similarities, and the least differences. Broadly, there are three categories of methods for sequence comparison.
+
+Segment methods compare all windows (overlapping segments of a predetermined length (e.g., 10 amino acids)) from one sequence to all segments	from the other. This is the approach used in dotplots.
+Optimal global alignment methods allow the best overall score for	the comparison of the two	sequences to be	obtained, including a consideration of gaps.
+Optimal local alignment algorithms seek to identify the best local similarities between two sequences but, unlike segment methods,	include	explicit consideration of gaps.
+
+A global alignment is one that compares	the two	sequences over their entire lengths,	and is appropriate for comparing sequences that	are expected to share similarity over the whole length. The	alignment maximises regions of similarity	and minimises gaps using the scoring matrices and gap parameters provided to	the program. The EMBOSS program	needle is an implementation of the Needleman-Wunsch [] algorithm for global alignment; the computation is	rigorous and needle can be time consuming to run if	the sequences are long.
+ A second comparison method, local alignment, searches for	regions	of local similarity and	need not include	the entire length of the sequences. Local alignment methods are very useful	for scanning databases or when you do not know that the sequences are similar over their entire lengths. The EMBOSS program	water is a rigorous implementation of the Smith	Waterman algorithm for local alignments.
+How similar are two sequences? This simple question drives much of bioinformatics, from assembly of overlapping sequence fragments into contigs, alignment of new sequences against reference genomes, BLAST searches of sequence databases, molecular phylogeny, and homology modeling of protein structures.
+
+Answering this question requires finding the optimal alignment between two different sequences, scoring their similarity based on the optimal alignment, and then assessing the significance of this score. The optimal alignment, of course, depends on the scoring scheme.
+
+Let’s consider 3 methods for pairwise sequence alignment: 1) dot plot, 2) global alignment, and 3) local alignment.
+Pairwise sequence alignment is one form of sequence alignment technique, where we compare only two sequences. This process involves finding the optimal alignment between the two sequences, scoring based on their similarity (how similar they are) or distance (how different they are), and then assessing the significance of this score.
+
+The basis of sequence alignment lies with the scoring process, where the two sequences are given a score on how similar (or different) they are to each other. The pairwise sequence aligning algorithms require a scoring matrix to keep track of the scores assigned. The scoring matrix assigns a positive score for a match, and a penalty for a mismatch.
+
+Smith-Waterman Algorithm
+Needleman-Wunsch Algorithm
+
+A multiple sequence alignment is simply an alignment that contains more than
+two sequences! Even if one is interested in the similarities between only two of the
+sequences in a set, it is always worth multiply-aligning all available sequences. The
+inclusion of these additional sequences in the multiple alignment will normally improve
+the accuracy of the alignment between the sequence pairs,as revealing patterns of conserved residues that would not have
+been obvious when only two sequences are directly studied. Although many programs
+exist that can generate a multiple alignment from unaligned sequences, extreme
+care must be taken when interpreting the results. An alignment may show
+perfect matching of a known active-site residue with an identical residue in a wellcharacterized
+protein family, but, if the alignment is incorrect, any inference about
+function will also be incorrect.
+A multiple sequence alignment (MSA) is a sequence alignment of three or more biological sequences, generally protein, DNA, or RNA. In many cases, the input set of query sequences are assumed to have an evolutionary relationship by which they share a linkage and are descended from a common ancestor. From the resulting MSA, sequence homology can be inferred and phylogenetic analysis can be conducted to assess the sequences' shared evolutionary origins. Visual depictions of the alignment as in the image at right illustrate mutation events such as point mutations (single amino acid or nucleotide changes) that appear as differing characters in a single alignment column, and insertion or deletion mutations (indels or gaps) that appear as hyphens in one or more of the sequences in the alignment. Multiple sequence alignment is often used to assess sequence conservation of protein domains, tertiary and secondary structures, and even individual amino acids or nucleotides.
+
+Multiple sequence alignment also refers to the process of aligning such a sequence set. Because three or more sequences of biologically relevant length can be difficult and are almost always time-consuming to align by hand, computational algorithms are used to produce and analyze the alignments. MSAs require more sophisticated methodologies than pairwise alignment because they are more computationally complex. Most multiple sequence alignment programs use heuristic methods rather than global optimization because identifying the optimal alignment between more than a few sequences of moderate length is prohibitively computationally expensive.
+A multiple sequence alignment (MSA) is a sequence alignment that receives as input three or more sequences and produces as output the analysis of similarity among the sequences.
+Two approaches to multiple sequence alignment (MSA) include progressive and iterative MSAs. As the names imply, progressive MSA starts with one sequence and progressively aligns the others, while iterative MSA realigns the sequences during multiple iterations of the process.
+A multiple sequence alignment is a comparison of multiple related DNA or amino acid sequences. A multiple sequence alignment can be used for many purposes including inferring the presence of ancestral relationships between the sequences. It should be noted that protein sequences that are structurally very similar can be evolutionarily distant. This is referred to as distant homology. 
+
+comparing comparing comparing

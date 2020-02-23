@@ -1,0 +1,25 @@
+<h1>Upload your Project</h1>
+<div class="container">
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+
+          <form (ngSubmit)="onSubmit()">
+              <p>
+                  <mat-form-field>
+                      <input matInput type="text" placeholder="Name your project..." >
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field width = '12rem'>
+                        <input matInput type="text" placeholder="Write a brief description of your project...">
+                    </mat-form-field>
+                </p>
+
+              <div class="form-group">
+                  <input mat-raised-button color="primary" type="file"/>
+                <button mat-raised-button color="primary" class="btn btn-primary">Submit</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+mat-search-bar
+{
+  display: block;
+  justify-content: center;
+}
+
+ul{
+  display: inline-block;
+
+}
+
+li {
+padding: 50 px;
+font-size: 25px;
+}

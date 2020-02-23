@@ -1,0 +1,9 @@
+search and retrieve and get aquire gene sequences from biological databases that contain dna sequences of ordered nucleotide bases.
+The aquistion of dna sequences from specific biological database.
+To download dna sequences from database in a specific format.
+different file formats include 
+FASTQ
+EMBL
+FASTA
+GCG
+GenBank

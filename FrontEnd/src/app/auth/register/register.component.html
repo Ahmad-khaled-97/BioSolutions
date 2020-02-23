@@ -1,0 +1,44 @@
+<!-- <mat-card>
+    <form >
+        <mat-card-title>Register</mat-card-title>
+      <p>
+          <mat-form-field>
+              <input matInput  [(ngModel)]="name" type="text" placeholder="Enter your name" [ngModelOptions]="{standalone: true}">
+           </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+            <input matInput  [(ngModel)]="email" type="email" placeholder="Email" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+      </p>
+      <p>
+          <mat-form-field>
+              <input matInput  [(ngModel)]="password" type="password" placeholder="Password" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+      </p>
+        <button mat-raised-button color="primary" (click)="registerUser(name, email, password)" type="submit">Register</button>
+    </form>
+</mat-card> -->
+
+<mat-card>
+  <form (submit)="onRegisteration(regForm)" #regForm="ngForm">
+      <mat-card-title>Registeration</mat-card-title>
+
+      <p>
+          <mat-form-field>
+              <input matInput name="name" type="text" placeholder="Enter your name">
+           </mat-form-field>
+      </p>
+    <p>
+      <mat-form-field>
+          <input matInput name="email" ngModel type="email" placeholder="Email" [ngModelOptions]="{standalone: true}" #emailInput="ngModel">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name = "password" ngModel type="password" placeholder="Password" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+    </p>
+      <button mat-raised-button color="primary"  type="submit">Register</button>
+  </form>
+</mat-card>
